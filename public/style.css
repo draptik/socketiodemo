@@ -120,6 +120,11 @@ ul {
   padding: 10px 20px 10px 20px;
 }
 
+.messages li {
+  position: absolute;
+  bottom: 0;
+}
+
 .message.typing .messageBody {
   color: gray;
 }
