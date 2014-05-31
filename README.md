@@ -14,6 +14,15 @@ Adapted from example at [https://github.com/Automattic/socket.io/tree/master/exa
 
 [http://draptik-chat-js.herokuapp.com/](http://draptik-chat-js.herokuapp.com/)
 
+### Heroku initial setup
+
+`heroku login`
+
+`heroku ps:scale web=1`
+
+`git push heroku master`
+
+
 ## TODO/ideas
 
 - Responsive design for mobile clients
