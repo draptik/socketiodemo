@@ -10,9 +10,12 @@ Adapted from example at [https://github.com/Automattic/socket.io/tree/master/exa
 
 `npm .`
 
+## Heroku
+
+[http://draptik-chat-js.herokuapp.com/](http://draptik-chat-js.herokuapp.com/)
+
 ## TODO/ideas
 
-- Deploy to heroku
 - Responsive design for mobile clients
 - Highlight links
 - file transfer...
