@@ -109,21 +109,30 @@ ul {
 /* Messages */
 
 .chatArea {
-  height: 100%;
-  padding-bottom: 60px;
+  height: calc(100% - 90px);
+  position: relative;
 }
 
-.messages {
-  height: 100%;
-  margin: 0;
-  overflow-y: scroll;
-  padding: 10px 20px 10px 20px;
-}
 
-.messages li {
+.chatMessageArea {
+  /*border: 2px solid green;*/
   position: absolute;
   bottom: 0;
+  width: 100%;
 }
+
+.chatMessageArea ul {
+  /*border: 1px solid red;*/
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding-bottom: 0;
+  bottom: 0;
+}
+
+.messages {}
+
+.messages li {}
 
 .message.typing .messageBody {
   color: gray;
