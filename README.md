@@ -14,6 +14,8 @@ Adapted from example at [https://github.com/Automattic/socket.io/tree/master/exa
 
 [http://draptik-chat-js.herokuapp.com/](http://draptik-chat-js.herokuapp.com/)
 
+In case the heroku site is not responding: Check [https://status.heroku.com/](https://status.heroku.com/)
+
 ### Heroku initial setup
 
 `heroku login`
