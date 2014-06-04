@@ -1,14 +1,13 @@
 extends layout
 
 block content
-  h1 XXXXXXXXXXXXXXXXXXX
-  //- ul.pages
-  //-   li.chat page
-  //-     chatArea
-  //-       chatMessageArea
-  //-         ul.messages
-  //-     inputMessage
-  //-   li.login page
-  //-     form
-  //-       h3.title BLLAAA
-  //-       input.userNameInput
+  ul.pages
+    li.chat.page
+      .chatArea
+        .chatMessageArea
+          ul.messages
+      input(placeholder='Type here...').inputMessage
+    li.login.page
+      .form
+        h3.title Whats your nickname?
+        input(maxlength=14, type='text').usernameInput

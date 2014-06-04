@@ -9,14 +9,11 @@ app.set('view engine', 'jade');
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
-app.use(express.static(__dirname + 'public'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-  res.render('index', {
-    pageTitle: 'Simple Express 3 and Jade example'
-  });
+  res.render('index', {});
 });
-
 
 // Chatroom
 // usernames which are currently connected to the chat
