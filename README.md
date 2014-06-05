@@ -8,7 +8,7 @@ Adapted from example at [https://github.com/Automattic/socket.io/tree/master/exa
 
 ## Usage
 
-`npm .`
+`node app.js`
 
 ## Heroku
 
