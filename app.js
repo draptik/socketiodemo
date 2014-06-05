@@ -3,14 +3,25 @@ var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 var port = process.env.PORT || 3000;
+var sass = require('node-sass');
 
-app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(app.router);
-app.use(express.static(__dirname + '/public'));
+app.configure(function () {
+  app.set('views', __dirname + '/views');
+  app.set('view engine', 'jade');
+  app.use(express.json());
+  app.use(express.urlencoded());
+  app.use(express.methodOverride());
+  app.use(app.router);
+  app.use(sass.middleware({
+    src: __dirname + '/sass',
+    dest: __dirname + '/public',
+    debug: true,
+    outputStyle: 'compressed'
+  }));
+  app.use(express.static(__dirname + '/public'));
+});
 
+// Routing
 app.get('/', function(req, res) {
   res.render('index', {});
 });
